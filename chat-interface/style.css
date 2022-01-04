@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+    text-decoration: none;
 }
 
 *:focus{
@@ -24,10 +25,13 @@ body{
     width: 300px;
     min-width: 300px;
     background: #eee;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat .sidebar .search{
     height: 40px;
+    min-height: 40px;
     border-bottom: 1px solid #ddd;
     position: relative;
     display: flex;
@@ -55,9 +59,46 @@ body{
     color: #999;
 }
 
+.chat .sidebar .contacts{
+    overflow: auto;
+    flex: 1;
+}
+
+.chat .sidebar .contacts ul li a {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.chat .sidebar .contacts ul li a:hover{
+    background: #fff;
+}
+
+.chat .sidebar .contacts ul li a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.chat .sidebar .contacts ul li a .contact{
+    padding-left: 10px;
+}
+
+.chat .sidebar .contacts ul li a .contact .name{
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.chat .sidebar .contacts ul li a .contact .message{
+    color: #999;
+    font-size: 13px;
+    margin-top: 1.5px;
+}
+
 .chat .content{
     flex: 1;
     border-left: 1px solid #ddd;
 }
-
 
