@@ -180,6 +180,49 @@ body{
 
 .chat .content .message-content{
     flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;  
+}
+
+.chat .content .message-content::before{
+    content: '';
+    margin-bottom: auto;
+}
+
+.chat .content .message-content .message{
+    
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.chat .content .message-content .message .buble{
+    background:#f7f7f7;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color:#333;
+    font-weight: 400;
+}
+
+.chat .content .message-content .message .time{
+    text-align: end;
+    font-size: 11px;
+    color: #999;
+}
+
+.chat .content .message-content .message.me{
+    align-self: flex-end;
+
+}
+
+.chat .content .message-content .message.me .buble{
+    background: #2196f3;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+
 }
 
 .chat .content .message-form{
