@@ -1,0 +1,3 @@
+[submodule "linkedin-redesign"]
+	path = linkedin-redesign
+	url = https://github.com/tayfunerbilen/frontend-gulp.git
